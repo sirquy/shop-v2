@@ -1,0 +1,146 @@
+$fontdefault: 'Cabin', 'Tahoma', Arial, "Lucida Grande", sans-serif;
+$color-1: #0fb7f9;
+$color-2: #237baa;
+$color-3: #f96502;
+$color-4: #e05c04;
+$color-5: #ecf6f9;
+
+$bd-pink:          #ed0d6f;
+$bd-purple:        #563d7c !default;
+$bd-purple-bright: lighten(saturate($bd-purple, 5%), 15%) !default;
+$bd-purple-light:  lighten(saturate($bd-purple, 5%), 45%) !default;
+$bd-dark:          #2a2730 !default;
+$bd-download:      #ffe484 !default;
+$bd-info:          #5bc0de !default;
+$bd-warning:       #f0ad4e !default;
+$bd-danger:        #d9534f !default;
+
+:root {
+    --blue:     #007bff;
+    --indigo:   #6610f2;
+    --purple:   #6f42c1;
+    --pink:     #e83e8c;
+    --red:      #dc3545;
+    --orange:   #fd7e14;
+    --yellow:   #ffc107;
+    --green:    #28a745;
+    --teal:     #20c997;
+    --cyan:     #17a2b8;
+    --white:    #fff;
+    --gray:     #6c757d;
+    --gray-dark:#343a40;
+    --primary:  #007bff;
+    --secondary:#6c757d;
+    --success:  #28a745;
+    --info:     #17a2b8;
+    --warning:  #ffc107;
+    --danger:   #dc3545;
+    --light:    #f8f9fa;
+    --dark:     #343a40;
+}
+
+.text-purle{
+    color: $bd-purple;
+}
+.text-purle-bright{
+    color: $bd-purple-bright;
+}
+.text-purle-light{
+    color: $bd-purple-light;
+}
+.text-dark{
+    color: $bd-dark;
+}
+.text-download{
+    color: $bd-download;
+}
+.text-info{
+    color: $bd-info;
+}
+.text-warning{
+    color: $bd-warning;
+}
+.text-danger{
+    color: $bd-danger;
+}
+.text-pink{
+    color: $bd-pink;
+}
+.text-white{
+    color: var(--white);
+}
+.text-light{
+    color: var(--light);
+}
+.text-primary{
+    color: var(--primary);
+}
+.text-light-blue{
+    color: $color-5;
+}
+
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-light{
+    background-color: var(--light);
+}
+.bg-white{
+    background-color: var(--white);
+}
+.bg-pink{
+    background-color: $bd-pink;
+}
+.bg-purle{
+    background-color: $bd-purple;
+}
+.bg-purle-bright{
+    background-color: $bd-purple-bright;
+}
+.bg-purle-light{
+    background-color: $bd-purple-light;
+}
+.bg-dark{
+    background-color: $bd-dark;
+}
+.bg-download{
+    background-color: $bd-download;
+}
+.bg-info{
+    background-color: $bd-info;
+}
+.bg-warning{
+    background-color: $bd-warning;
+}
+.bg-danger{
+    background-color: $bd-danger;
+}
+
+.color-1{
+    color: $color_1;
+}
+.color-2{
+    color: $color-2;
+}
+.color-3{
+    color: $color-3;
+}
+.color-4{
+    color: $color-4;
+}
+
+.bg-1{
+    background-color: $color-1;
+}
+.bg-2{
+    background-color: $color-2;
+}
+.bg-3{
+    background-color: $color-3;
+}
+.bg-4{
+    background-color: $color-4;
+}
+.bg-light-blue{
+    background-color: $color-5;
+}

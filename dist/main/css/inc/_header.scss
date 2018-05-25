@@ -1,0 +1,40 @@
+header{
+    position: relative;
+}
+.header-logo{
+    max-width: 80px;
+}
+nav{
+    &.top-menu{
+        a{
+            display: block;
+            color: #fff;
+            padding: 8px 25px;
+            &:hover{
+                color: #fff;
+                background-color: #43a7c8;
+            }
+        }
+    }
+    &.cate-list{
+        ul{
+            display: block;
+            li > a{
+                padding: 5px 15px;
+                display: block;
+                font-size: 1.1em;
+                color: #444;
+                &:hover{
+                    color: #222;
+                    background-color: rgba(67, 167, 200, 0.533);
+                }
+                i, span{
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+.adtext:not(:last-child){
+    border-right: 1px solid #ddd;
+}

@@ -1,0 +1,55 @@
+<div class="uk-container py-3">
+    <div class="row">
+        <div class="col-md-3 d-md-block d-none">
+            <nav class="uk-box-shadow-medium bg-white cate-list">
+                <h5 class="mb-0 text-uppercase text-white bg-primary py-2 px-3 text-center">
+                    Danh mục sản phẩm
+                </h5>
+                <%- include('../comp/cate-list') -%>
+            </nav>
+        </div>
+        <div class="col-md-9" uk-slideshow="animation: push; max-height: 380">
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img class="h-100" data-src="/dist/images/banner.jpg" uk-img>
+                </li>
+                <li>
+                    <img class="h-100" data-src="/dist/images/banner.jpg" uk-img>
+                </li>
+                <li>
+                    <img class="h-100" data-src="/dist/images/banner.jpg" uk-img>
+                </li>
+                <li>
+                    <img class="h-100" data-src="/dist/images/banner.jpg" uk-img>
+                </li>
+                <li>
+                    <img class="h-100" data-src="/dist/images/banner.jpg" uk-img>
+                </li>
+            </ul>
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            <ul class="d-md-flex bg-info text-center my-0 nolist uk-text-small">
+                <li uk-slideshow-item="0" class="flex-1 py-2 px-3 adtext"><a href="#">
+                        <p class="my-0 text-white">Trả Góp FECredit</p>
+                        <p class="my-0 text-white">0đ Trả trước</p>
+                </a></li>
+                <li uk-slideshow-item="1" class="flex-1 py-2 px-3 adtext"><a href="#">
+                        <p class="my-0 text-white">Sắm TV TCL</p>
+                        <p class="my-0 text-white">Trúng KIA Morning</p>
+                </a></li>
+                <li uk-slideshow-item="2" class="flex-1 py-2 px-3 adtext"><a href="#">
+                        <p class="my-0 text-white">Samsung Addwash</p>
+                        <p class="my-0 text-white">0đ Trả trước</p>
+                </a></li>
+                <li uk-slideshow-item="3" class="flex-1 py-2 px-3 adtext"><a href="#">
+                        <p class="my-0 text-white">Sắm TV LCD</p>
+                        <p class="my-0 text-white">Trúng KIA Morning</p>
+                </a></li>
+                <li uk-slideshow-item="4" class="flex-1 py-2 px-3 adtext"><a href="#">
+                        <p class="my-0 text-white">Smart TV Panasonic 49'</p>
+                        <p class="my-0 text-white">Quà 400 ngàn</p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>

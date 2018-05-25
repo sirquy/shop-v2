@@ -1,0 +1,146 @@
+<header>
+    <div class="uk-container-large">
+        <a href="/">
+            <img data-src="/dist/images/bn.png" alt="" uk-img>
+        </a>
+    </div>
+    <div class="bg-pink">
+        <div class="uk-container">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-1-4@m">
+                    <ul class="uk-iconnav py-1">
+                        <li>
+                            <a href="#">
+                                <i class="uk-icon-button bg-primary text-white" uk-icon="facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="uk-icon-button bg-danger text-white" uk-icon="google"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="uk-icon-button bg-info text-white" uk-icon="twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="uk-icon-button bg-warning text-white" uk-icon="youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="uk-width-3-4@m">
+                    <ul class="nolist uk-text-right@m py-1">
+                        <li class="text-white uk-display-inline-block mr-3">
+                            <i uk-icon="location"></i>
+                            <span>487 Thống Nhất, P. Kinh Dinh, TP. Phan Rang - Tháp Chàm, Ninh Thuận</span>
+                        </li>
+                        <li class="text-white uk-display-inline-block mr-3">
+                            <i uk-icon="mail"></i>
+                            <span>Info@tuson.vn</span>
+                        </li>
+                        <li class="text-white  uk-display-inline-block">
+                            <i uk-icon="receiver"></i>
+                            <span class="uk-text-bold">1800 1569</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <a class="row align-items-center py-2" href="/">
+                    <img class=" d-block col-md-3 col-5 header-logo px-0" alt="" data-src="/dist/images/logo.png" uk-img>
+                    <div class="col-md-9 col-7">
+                        <h4 class="my-0 text-info uk-text-bold">Siêu thị điện máy Từ Sơn</h5>
+                            <h4 class="my-0 text-pink text-uppercase">Khách hàng là ân nhân</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-5">
+                <form class="w-100 uk-search uk-search-default">
+                    <a href="" class="uk-search-icon-flip" uk-search-icon></a>
+                    <input class="uk-search-input uk-input w-100" type="search" placeholder="Search...">
+                </form>
+            </div>
+            <div class="col-md-3">
+                <ul class="uk-iconnav">
+                    <li>
+                        <a class="text-center text-dark p-1" href="#search-full" uk-toggle>
+                            <i class="uk-icon-button text-dark" uk-icon="list"></i>
+                            <div class="uk-navbar-subtitle">Tra cứu đơn hàng</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-center text-dark p-1" href="/">
+                            <i class="uk-icon-button text-dark" uk-icon="cart"></i>
+                            <div class="uk-navbar-subtitle">Giả Hàng</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="text-center text-dark p-1" href="#">
+                            <i class="uk-icon-button text-dark" uk-icon="users"></i>
+                            <div class="uk-navbar-subtitle">Tài khoản</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg-primary"  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav class="uk-container top-menu">
+            <ul class="nolist d-md-inline-flex">
+                <li>
+                    <a href="">Trang Chủ</a>
+                </li>
+                <li>
+                    <a href="">Sản Phẩm
+                        <i uk-icon="chevron-down"></i>
+                    </a>
+                </li>
+                <li class="is-label">
+                    <label>
+                        <span>Sale</span>
+                    </label>
+                    <a href="">Khuyến Mãi</a>
+                </li>
+                <li class="is-label">
+                        <label>
+                                <span>Hot</span>
+                            </label>
+                    <a href="">Giảm Giá Sốc</a>
+                </li>
+                <li class="is-label">
+                        <label>
+                                <span>New</span>
+                            </label>
+                    <a href="">Tin Tức</a>
+                </li>
+                <li>
+                    <a href="">Giới Thiệu</a>
+                </li>
+                <li>
+                    <a href="">Tuyển Dụng</a>
+                </li>
+                <li>
+                    <a href="">Diễn Đàn</a>
+                </li>
+                <li>
+                    <a href="">Liên Hệ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div id="search-full" class="uk-modal-full uk-modal" uk-modal>
+    <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+        <button class="uk-modal-close-full" type="button" uk-close></button>
+        <form class="uk-search uk-search-large">
+            <input class="uk-search-input uk-text-center" type="search" placeholder="Vui lòng nhập mã đơn hàng..." autofocus>
+        </form>
+    </div>
+</div>

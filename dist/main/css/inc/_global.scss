@@ -1,0 +1,141 @@
+// #region Global
+body{
+    font-family: $fontdefault;
+    min-height: 1000px;
+}
+.flex-1{
+    flex: 1;
+}
+.flex-2{
+    flex: 2;
+}
+a:hover, a:focus{
+    @include effect;
+    text-decoration: none;
+}
+.nolist{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.effect{
+    @include effect;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button,{
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    margin: 0;
+    appearance: none;
+    -moz-appearance: textfield;
+}
+@include checkbox(#0088ff);
+// #endregion
+
+#scrollTop{
+    cursor: pointer;
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    z-index: 50;
+    bottom: 20px;
+    right: 20px;
+    background: #0088ff;
+    color: #fff;
+    .fa{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+    }
+}
+.is-label{
+    position: relative;
+    label{
+        position: absolute;
+        top: -20%;
+        right: 0;
+        width: 35px;
+        height: 25px;
+        background-image: url(/dist/images/badge.png);
+        background-position: 0 0;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        span{
+            position: absolute;
+            top: 4px;
+            font-size: .6em;
+            right: 10px;
+            color: #fff;
+        }
+    }
+}
+.uk-sticky-fixed .is-label label{
+    top: 0;
+}
+.iconlist{
+    width: 30px;
+    height: 30px;
+    background-image: url('/dist/images//iconlist.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.line-height-1{
+    line-height: 1;
+}
+@include iconlist('tulanh', 0, 3px);
+@include iconlist('noicom', 0, -22px);
+@include iconlist('dienmay', 0, -47px);
+@include iconlist('camera', 0, -73px);
+@include iconlist('speaker', 0, -100px);
+@include iconlist('setting', 0, -126px);
+@include iconlist('giangoai', 0, -150px);
+@include iconlist('vienthong', 0, -175px);
+@include iconlist('computer', 0, -199px);
+@include iconlist('allcate', 0, -225px);
+@include sm{
+    .flex-sm-1{
+        flex: 1;
+    }
+    #over{
+        display: none;
+        width: 0;
+        height: 0;
+        position: fixed;
+        z-index: -10;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.3);
+        &.active{
+            width: 100%;
+            height: 100%;
+            display: block;
+            z-index: 10;
+        }
+    }
+    .is-label{
+        position: relative;
+        label{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 25px;
+            background-image: url(/dist/images/badge.png);
+            background-position: 0 0;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            span{
+                position: absolute;
+                top: 4px;
+                font-size: .6em;
+                right: 10px;
+                color: #fff;
+            }
+        }
+    }
+}
