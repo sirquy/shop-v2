@@ -38,3 +38,60 @@ nav{
 .adtext:not(:last-child){
     border-right: 1px solid #ddd;
 }
+@include md{
+    .menu-fixed{
+        position: relative!important;
+    }
+    nav.top-menu{
+        position: relative!important;
+        display: block;
+        .uk-offcanvas-bar{
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            background-color: transparent;
+            width: 100%;
+            padding: 0;;
+            overflow-y: unset;
+            -webkit-overflow-scrolling: touch;
+            transform: translateX(0%);
+        }
+    }
+    .uk-dropdown{
+        padding: 0;
+    }
+}
+@include sm{
+    .uk-dropdown{
+        padding: 0;
+        position: static;
+        width: 100%;
+    }
+    .menu-fixed{
+        left: 0;
+        top: 0;
+        background: #43a7c8;
+        .uk-navbar-subtitle{
+            color: #fff!important;
+        }
+    }
+    nav.top-menu{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        &::before{
+            width: 100vw;
+            height: 100%;
+        }
+        ul.uk-offcanvas-bar{
+            padding-right: 0;
+            height: 100vh;
+            position: relative;
+            z-index: 9999;
+            background-color: #43a7c8;
+        }
+    }
+}

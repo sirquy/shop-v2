@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-12 text-md-left text-center align-items-center mb-3 home-title">
+        <div class="d-md-inline-block bg-light pr-md-3 position-relative title-content">
+            <div class="uk-text-large text-primary text-uppercase utmshowcard d-md-inline-block d-block">
+                Deal Giá Cực Sốc
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <% for(let i=0; i<4; i++){ %>
+                <a href="/detail.html" class="col-md-3 p-0 border-right border-muted uk-card uk-card-hover bg-white  mb-md-0 mb-2">
+                    <div class="uk-card-media-top text-center">
+                        <img src="/dist/images/news-<%= i+1 %>.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body p-3">
+                        <strong class="d-block text-center">
+                                Morgan Stanley: Apple sẽ trở thành công ty trị giá 1 nghìn tỉ USD trong vòng 1 năm tới
+                        </strong>
+                    </div>
+                </a>
+                <% } %>
+        </div>
+    </div>
+</div>

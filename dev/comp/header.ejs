@@ -1,10 +1,10 @@
-<header>
+<header class="uk-offcanvas-content">
     <div class="uk-container-large">
         <a href="/">
             <img data-src="/dist/images/bn.png" alt="" uk-img>
         </a>
     </div>
-    <div class="bg-pink">
+    <div class="bg-pink d-md-block d-none">
         <div class="uk-container">
             <div class="uk-flex-middle" uk-grid>
                 <div class="uk-width-1-4@m">
@@ -52,55 +52,119 @@
     </div>
     <div class="uk-container">
         <div class="row align-items-center">
-            <div class="col-md-4">
+            <div class="col-md-4 col-12">
                 <a class="row align-items-center py-2" href="/">
-                    <img class=" d-block col-md-3 col-5 header-logo px-0" alt="" data-src="/dist/images/logo.png" uk-img>
-                    <div class="col-md-9 col-7">
+                    <div class="d-block col-md-3 px-md-0 text-md-left text-center">
+                        <img class=" header-logo" alt="" data-src="/dist/images/logo.png" uk-img>
+                    </div>
+                    <div class="col-md-9 col-7 d-md-block d-none">
                         <h4 class="my-0 text-info uk-text-bold">Siêu thị điện máy Từ Sơn</h5>
                             <h4 class="my-0 text-pink text-uppercase">Khách hàng là ân nhân</h4>
                     </div>
                 </a>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 col-12 order-md-2 order-3">
                 <form class="w-100 uk-search uk-search-default">
                     <a href="" class="uk-search-icon-flip" uk-search-icon></a>
                     <input class="uk-search-input uk-input w-100" type="search" placeholder="Search...">
                 </form>
             </div>
-            <div class="col-md-3">
-                <ul class="uk-iconnav">
-                    <li>
+            <div class="col-md-3 order-md-3 order-2">
+                <ul class="uk-iconnav d-inline-flex w-100" uk-sticky="cls-active: menu-fixed; bottom: #transparent-sticky-navbar">
+                    <li class="flex-sm-1">
                         <a class="text-center text-dark p-1" href="#search-full" uk-toggle>
                             <i class="uk-icon-button text-dark" uk-icon="list"></i>
-                            <div class="uk-navbar-subtitle">Tra cứu đơn hàng</div>
+                            <div class="uk-navbar-subtitle">Tra cứu
+                                <span class="d-md-inline-block d-none">đơn hàng</span>
+                            </div>
                         </a>
                     </li>
-                    <li>
-                        <a class="text-center text-dark p-1" href="/">
+                    <li class="flex-sm-1">
+                        <a class="text-center text-dark p-1" href="#">
                             <i class="uk-icon-button text-dark" uk-icon="cart"></i>
                             <div class="uk-navbar-subtitle">Giả Hàng</div>
                         </a>
                     </li>
-                    <li>
+                    <li class="flex-sm-1">
                         <a class="text-center text-dark p-1" href="#">
                             <i class="uk-icon-button text-dark" uk-icon="users"></i>
                             <div class="uk-navbar-subtitle">Tài khoản</div>
+                        </a>
+                    </li>
+                    <li class="flex-sm-1 d-md-none d-block">
+                        <a class="text-center text-dark p-1" href="#top-menu" uk-toggle>
+                            <i class="uk-icon-button text-dark" uk-icon="menu"></i>
+                            <div class="uk-navbar-subtitle">Menu</div>
                         </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="bg-primary"  uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
-        <nav class="uk-container top-menu">
-            <ul class="nolist d-md-inline-flex">
+    <div class="bg-primary" uk-sticky="media: 769; sel-target: .top-menu; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+        <nav id="top-menu" class="uk-container top-menu" uk-offcanvas="mode: push; overlay: true;">
+            <ul class="nolist d-md-inline-flex uk-offcanvas-bar">
+                <li class=" d-block d-md-none"><button class="uk-offcanvas-close" type="button" uk-close></button></li>
                 <li>
                     <a href="">Trang Chủ</a>
                 </li>
                 <li>
-                    <a href="">Sản Phẩm
+                    <a href="#">Sản Phẩm
                         <i uk-icon="chevron-down"></i>
                     </a>
+                    <ul class="category-list nolist mt-0 py-0" uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Tủ Lạnh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Điện Gia Dụng</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Điện Máy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Thiết Bị Số</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>hệ Thống Âm Thanh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Dịch Vụ Kỹ Thuật</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Thiết Bị Giã Ngoại</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+
+                                <span>Viễn Thông</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Tin Học</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-dark" href="/">
+                                <span>Tất Cả Danh Mục</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="is-label">
                     <label>
@@ -109,15 +173,15 @@
                     <a href="">Khuyến Mãi</a>
                 </li>
                 <li class="is-label">
-                        <label>
-                                <span>Hot</span>
-                            </label>
+                    <label>
+                        <span>Hot</span>
+                    </label>
                     <a href="">Giảm Giá Sốc</a>
                 </li>
                 <li class="is-label">
-                        <label>
-                                <span>New</span>
-                            </label>
+                    <label>
+                        <span>New</span>
+                    </label>
                     <a href="">Tin Tức</a>
                 </li>
                 <li>
@@ -130,7 +194,7 @@
                     <a href="">Diễn Đàn</a>
                 </li>
                 <li>
-                    <a href="">Liên Hệ</a>
+                    <a href="/contact.html">Liên Hệ</a>
                 </li>
             </ul>
         </nav>

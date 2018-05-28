@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'BlackOpsOne';
+    src: url("../fonts/BlackOpsOne-Regular.ttf");
+    font-weight: normal;
+    font-style: normal; }
+@font-face {
     font-family: 'UTMLinotypeZapfinoKT';
     src: url("../fonts/UTM-LinotypeZapfino-KT.ttf");
     font-weight: normal;
@@ -22,7 +27,7 @@
     font-family: 'UTMShowcard';
     src: url("../fonts/UTM-Showcard.ttf");
 }
-
+$blackoopsone: 'BlackOpsOne';
 $utmlion: 'UTMLinotypeZapfinoKT';
 $utmneobold: 'UTMNeobold';
 $utmshowcard: 'UTMShowcard';
@@ -32,6 +37,9 @@ $vutaFont: 'VutaFont';
 $fa: 'Fontawesome';
 
 
+.blackoopsone{
+    font-family: $blackoopsone;
+}
 .utmlion{
     font-family: $utmlion;
 }

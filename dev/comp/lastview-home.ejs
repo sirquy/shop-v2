@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-12 text-md-left text-center align-items-center mb-3 home-title">
+        <div class="d-md-inline-block bg-light pr-md-3 position-relative title-content">
+            <div class="uk-text-large text-primary text-uppercase utmshowcard d-md-inline-block d-block">
+                Sản Phẩm Đã Xem
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="row">
+            <% for(let i=0; i<4; i++){ %>
+                <a href="/detail.html" class="col-md-3 col-6 p-0 border-right border-muted uk-card uk-card-hover bg-white">
+                    <div class="uk-card-media-top py-4 text-center">
+                        <img src="/dist/images/canon.jpg" alt="">
+                    </div>
+                    <div class="uk-card-body p-3">
+                        <strong class="d-block text-center">
+                            Máy quay phim Canon J350 NR-F510GT-X2
+                        </strong>
+                        <div class="d-block text-center text-pink">
+                            12,000,000
+                            <small class="uk-text-top">đ</small>
+                        </div>
+                    </div>
+                </a>
+                <% } %>
+        </div>
+    </div>
+</div>

@@ -28,8 +28,22 @@
 .nav-filter{
     li > a{
         color: #333;
+        position: relative;
+        &::before{
+            content: '';
+            bottom: 0;
+            left: 0;
+            height: 1px;
+            width: 0;
+            @include effect;
+            position: absolute;
+            background-color: var(--green);
+        }
         &:hover{
             color: var(--green);
+            &::before{
+                width: 100%;
+            }
         }
     }
 }
@@ -46,6 +60,21 @@
             padding-bottom: 10px;
             color: #fff;
             font-size: 0.5em;
+        }
+    }
+    .home-title{
+        &::before{
+            content: unset;
+        }
+    }
+    .uk-card-body{
+        strong{
+            font-size: 0.75em;
+        }
+    }
+    .blackoopsone{
+        span{
+            font-size: 1em;
         }
     }
 }

@@ -33,7 +33,7 @@ input[type=number]{
     appearance: none;
     -moz-appearance: textfield;
 }
-@include checkbox(#0088ff);
+// @include checkbox(#0088ff);
 // #endregion
 
 #scrollTop{
@@ -98,6 +98,16 @@ input[type=number]{
 @include iconlist('computer', 0, -199px);
 @include iconlist('allcate', 0, -225px);
 @include sm{
+    .uk-modal-close-full{
+        top: 10%;
+    }
+    .uk-offcanvas-close{
+        padding: 20px;
+        top: 0;
+        right: 0;
+        background-color: #fff;
+        color: #0088ff!important;
+    }
     .flex-sm-1{
         flex: 1;
     }
