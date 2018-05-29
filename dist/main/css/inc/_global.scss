@@ -21,18 +21,20 @@ a:hover, a:focus{
 .effect{
     @include effect;
 }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button,{
-    appearance: none;
-    -webkit-appearance: none;
-    margin: 0;
-}
 input[type=number]{
-    margin: 0;
-    appearance: none;
-    -moz-appearance: textfield;
+    text-align: center;
 }
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button,{
+//     appearance: none;
+//     -webkit-appearance: none;
+//     margin: 0;
+// }
+// input[type=number]{
+//     margin: 0;
+//     appearance: none;
+//     -moz-appearance: textfield;
+// }
 // @include checkbox(#0088ff);
 // #endregion
 

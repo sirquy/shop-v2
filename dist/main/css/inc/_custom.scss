@@ -19,8 +19,28 @@
     background: rgba(43, 43, 53, 0.53);
     color: #fff;
 }
-.uk-slideshow ul > li[uk-slideshow-item].uk-active{
-    background: $bd-pink;
+.uk-slideshow ul > li[uk-slideshow-item]{
+    &.uk-active{
+        background: $bd-pink;
+    }
+    &.thumb-slider{
+       a{
+           background: #fff;
+        width: 100px;
+        height: 100px;
+        img{
+            width: auto;
+            height: 100%;
+        }
+       }
+        &.uk-active{
+            background: transparent;
+        }
+    }
+}
+.thumb-sliders{
+    max-width: 100%;
+    overflow-x: auto;
 }
 .thumb-home-left{
     max-height: 122px;
@@ -52,7 +72,57 @@
     top: 1%;
     right: 1%;
 }
+
+.cr_1{
+    label{
+        padding: 0 5px;
+        font-size: 0.65em;
+    }
+    input[type='checkbox'], input[type='radio']{
+        display: none;
+        & ~ label{
+            display: inline-block;
+            background-color: azure;
+            color: #333;
+            outline: 1px solid transparent;
+            outline-offset: 5px;
+            @include effect;
+        }
+        &:checked ~ label{
+            outline-color: #333;
+            outline-offset: 2px;
+        }
+    }
+}
+
+.ref{
+    width: 100%;
+    display: block;
+    list-style: none;
+    li{
+        position: relative;
+        padding: 8px 0;
+        &::before{
+            content: '\f067';
+            margin-right: 10px;
+            font-family: 'Fontawesome';
+        }
+    }
+    .down-ref{
+        width: 100%;
+        display: block;
+        list-style: none;
+    }
+}
 @include sm{
+    .--js-tabs-widget{
+        .--js-tab{
+            display: none;
+            &.uk-active{
+                display: block;
+            }
+        }
+    }
     .nav-filter{
         background: var(--cyan);
         li > a{
@@ -75,6 +145,19 @@
     .blackoopsone{
         span{
             font-size: 1em;
+        }
+    }
+    .uk-slideshow ul > li[uk-slideshow-item]{
+        &.thumb-slider{
+            a{
+                background: #fff;
+                width: 80px;
+                height: 80px;
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+           }
         }
     }
 }

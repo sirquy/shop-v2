@@ -1,0 +1,210 @@
+<%- include('layout/meta') -%>
+    <%- include('comp/header') -%>
+        <div class="bg-white">
+            <div class="uk-container py-3">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 mb-2">
+                        <img data-src="/dist/images/selloff.jpg" alt="" class="d-block w-100" uk-img>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-2">
+                        <img data-src="/dist/images/selloff.jpg" alt="" class="d-block w-100" uk-img>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-2">
+                        <img data-src="/dist/images/selloff.jpg" alt="" class="d-block w-100" uk-img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-light">
+            <div class="uk-container py-4">
+                <div class="row py-3">
+                    <div class="col-md-12 text-md-left text-center align-items-center mb-3 home-title">
+                        <div class="d-md-inline-block bg-light pr-md-3 position-relative title-content">
+                            <div class="uk-text-large text-primary text-uppercase utmshowcard d-md-inline-block d-block">
+                                Cơ điện lạnh
+                            </div>
+                            <div class="ml-md-2 uk-text-small d-md-inline-block d-block bg-light">
+                                Sản phẩm đến từ Samsung, Sanyo, Hitachi
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 px-md-3 px-0">
+                        <div class="bg-white px-3 uk-box-shadow-medium">
+                            <div class="row d-md-none" uk-tab="animation: uk-animation-fade;media: (max-width: 768px); connect: .--js-tabs-widget">
+                                <li class="col-4 px-0">
+                                    <a class="uk-text-small d-block py-2" href="#">Thương hiệu</a>
+                                </li>
+                                <li class="col-4">
+                                    <a class="uk-text-small d-block py-2" href="#">Giá bán</a>
+                                </li>
+                                <li class="col-4 px-0">
+                                    <a class="uk-text-small d-block py-2" href="#">Nơi sản xuất</a>
+                                </li>
+                            </div>
+                            <div class="row --js-tabs-widget">
+                                <div class="col-md-12 --js-tab">
+                                    <div class="row">
+                                        <strong class="col-md-12 text-uppercase uk-text-bold py-2">
+                                            Thương hiệu
+                                        </strong>
+                                        <% for(let i=0; i<8; i++){ %>
+                                            <label for="test-<%=i%>" class="col-6" uk-form-custom="target: true">
+                                                <input id="test-<%= i %>" type="checkbox" class="uk-checkbox" name="test-<%= i %>">
+                                                <img class="d-inline" data-src="/dist/images/panasonic.png" width="80px" alt="" uk-img>
+                                            </label>
+                                            <% } %>
+                                                <div class="col-12 d-md-block d-none">
+                                                    <hr class="uk-divider-icon">
+                                                </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 --js-tab">
+                                    <div class="row">
+                                        <strong class="col-md-12 text-uppercase uk-text-bold py-2">
+                                            Giá bán
+                                        </strong>
+                                        <label for="test-radio-5tr" class="col-6 uk-text-small" uk-form-custom="target: true">
+                                            <input id="test-radio-5tr" type="radio" class="uk-radio" name="test-radio"> Dưới 5 triệu
+                                        </label>
+                                        <label for="test-radio-7tr" class="col-6 uk-text-small" uk-form-custom="target: true">
+                                            <input id="test-radio-7tr" type="radio" class="uk-radio" name="test-radio"> Từ 5 - 7 triệu
+                                        </label>
+                                        <label for="test-radio-10tr" class="col-6 uk-text-small" uk-form-custom="target: true">
+                                            <input id="test-radio-10tr" type="radio" class="uk-radio" name="test-radio"> Từ 7 - 10 triệu
+                                        </label>
+                                        <label for="test-radio-11tr" class="col-6 uk-text-small" uk-form-custom="target: true">
+                                            <input id="test-radio-11tr" type="radio" class="uk-radio" name="test-radio"> Trên 10 triệu
+                                        </label>
+                                    </div>
+                                    <div class="col-12 d-md-block d-none">
+                                        <hr class="uk-divider-icon">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 --js-tab">
+                                    <div class="row">
+                                        <strong class="col-md-12 text-uppercase uk-text-bold py-2">
+                                            Nơi sản xuất
+                                        </strong>
+                                        <% for(let i=0; i<8; i++){ %>
+                                            <label for="test-<%=i%>" class="col-6" uk-form-custom="target: true">
+                                                <input id="test-<%= i %>" type="checkbox" class="uk-checkbox" name="test-<%= i %>"> Việt Nam
+                                            </label>
+                                            <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-12 bg-white py-3">
+                                <div class="d-flex">
+                                    <label class="mr-3 mb-0" uk-form-custom="target: .--js-banchay">
+                                        <input type="radio" name="js-filter" class="uk-radio uk-form-danger --js-banchay">
+                                        <span class="d-md-inline d-block">Bán chạy</span>
+                                    </label>
+                                    <label class="mr-3 mb-0" uk-form-custom="target: .--js-banchay">
+                                        <input type="radio" name="js-filter" class="uk-radio uk-form-danger --js-banchay">
+                                        <span class="d-md-inline d-block">Giá thấp đến cao</span>
+                                    </label>
+                                    <label class="mr-3 mb-0" uk-form-custom="target: .--js-banchay">
+                                        <input type="radio" name="js-filter" class="uk-radio uk-form-danger --js-banchay">
+                                        <span class="d-md-inline d-block">Giá cao đến thấp</span>
+                                    </label>
+                                    <label class="mr-3 mb-0" uk-form-custom="target: .--js-banchay">
+                                        <input type="radio" name="js-filter" class="uk-radio uk-form-danger --js-banchay">
+                                        <span class="d-md-inline d-block">% Trả góp</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <% for(let i=0; i<8; i++){ %>
+                                <div class="uk-inline-clip uk-transition-toggle bg-white col-md-3 col-6 border border-muted px-0" tabindex="0">
+                                    <a href="/detail.html" class="uk-card uk-card-hover d-block">
+                                        <div class="uk-card-media-top py-4 text-center">
+                                            <small class="product-badge uk-label-warning p-1 line-height-1">
+                                                Trả góp
+                                                <b>0%</b>
+                                            </small>
+                                            <img src="/dist/images/canon.jpg" alt="">
+                                        </div>
+                                        <div class="uk-card-body p-3">
+                                            <div class="row align-items-center border-bottom border-muted pb-3">
+                                                <div class="col-3 px-0">
+                                                    <img src="/dist/images/gif.ico" alt="">
+                                                </div>
+                                                <div class="col-9 pr-0">
+                                                    <div class="d-block text-danger uk-text-bold">Quà Tặng</div>
+                                                    <div class="d-block uk-text-small line-height-1">
+                                                        <small>Voucher trị giá 500 ngàn</small>
+                                                    </div>
+                                                    <div class="d-block uk-text-small line-height-1">
+                                                        <small>Máy xay sinh tố</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <strong class="d-block text-center">
+                                                Máy quay phim Canon J350 NR-F510GT-X2
+                                            </strong>
+                                            <div class="d-block text-center text-pink">
+                                                12,000,000
+                                                <small class="uk-text-top">đ</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/detail.html" class="uk-transition-fade uk-position-bottom uk-overlay bg-white h-100">
+                                        <strong class="d-block text-primary">
+                                            Panasonic
+                                            <span class="ml-2 text-dark">1952</span>
+                                        </strong>
+                                        <strong class="d-block text-dark">
+                                            FKT2958221
+                                        </strong>
+                                        <ul class="d-block w-100 nolist uk-text-small">
+                                            <li>Tử lạnh ngăn đá trên</li>
+                                            <li>Công nghệ Inverter</li>
+                                            <li>Dung tích: 192 lít</li>
+                                            <li>Tiêu thủ 0.8 kw/ngày</li>
+                                            <li>Sản xuất: Việt Nam</li>
+                                        </ul>
+                                        <h4 class="text-danger font-weight-bold">9,800,000đ</h4>
+                                    </a>
+                                </div>
+                                <% } %>
+                        </div>
+                        <div class="row">
+                            <ul class="uk-pagination col-12 py-2 uk-flex-center" uk-margin>
+                                <li>
+                                    <a href="#">
+                                        <span uk-pagination-previous></span>
+                                    </a>
+                                </li>
+                                <li class="uk-active">
+                                    <a href="#">1</a>
+                                </li>
+                                <li class="uk-disabled">
+                                    <span>...</span>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+                                <li>
+                                    <span>7</span>
+                                </li>
+                                <li>
+                                    <a href="#">8</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span uk-pagination-next></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('layout/footer') -%>

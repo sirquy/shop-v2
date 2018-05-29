@@ -251,10 +251,10 @@
             <div class="uk-container py-4">
                 <div class="row">
                     <div class="col-md-6">
-                        <h6 class="p-3 bg-primary text-white text-md-left text-center text-uppercase">
-                            Liên hệ gớp ý
-                        </h6>
                         <form action="">
+                            <h6 class="p-3 bg-primary text-white text-md-left text-center text-uppercase">
+                                Liên hệ gớp ý
+                            </h6>
                             <div class="form-group d-inline-flex">
                                 <label class="mr-5">
                                     <input class="uk-radio" type="radio" name="radio"> Anh
@@ -274,196 +274,256 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="" id="" class="uk-input" placeholder="Địa chỉ giao hàng">
+                                <input type="text" class="uk-input" placeholder="Địa chỉ nhận hàng*">
+                            </div>
+                            <h6 class="p-3 bg-primary text-white text-md-left text-center text-uppercase">
+                                Hình thức thanh toán
+                            </h6>
+                            <div class="form-group d-inline-flex">
+                                <label class="mr-5">
+                                    <input class="uk-radio" type="radio" name="payment" checked> Nhận hàng tại nhà
+                                </label>
+                                <label>
+                                    <input class="uk-radio" type="radio" name="payment"> Nhận hàng tại trung tâm
+                                </label>
                             </div>
                             <div class="form-group">
-                                <textarea class="uk-textarea" name="" id="" cols="30" rows="5"></textarea>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="uk-input" placeholder="Tỉnh/Thành Phố*">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="uk-input" placeholder="Quận/Huyện">
+                                    </div>
+                                </div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary text-uppercase px-5">Gửi tin</button>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" class="uk-input" placeholder="Phường/Xã*">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" class="uk-input" placeholder="Địa Chỉ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="5" class="uk-textarea" placeholder="Lời nhắn"></textarea>
+                            </div>
+                            <h6 class="p-3 bg-primary text-white text-md-left text-center text-uppercase">
+                                Vận chuyển
+                            </h6>
+                            <div class="form-group">
+                                <div class="d-block">
+                                    Quý khách vui lòng chọn hình thức nhận hàng
+                                </div>
+                                <label>
+                                    <input class="uk-radio" type="radio" name="travel" checked> Muốn thoả thuận với Siêu thị Tuson.vn
+                                </label>
+                                <label>
+                                    <input class="uk-radio" type="radio" name="travel"> Nhân viên chúng tôi sẽ gọi đến cho quý khách
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="uk-input" placeholder="Thời gian giao hàng">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="5" class="uk-textarea" placeholder="Ghi chú"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-info btn-lg text-uppercase text-white">Gửi đơn hàng</button>
                             </div>
                         </form>
-                        <strong class="text-uppercase">
-                                Tuson.vn - kênh mua sắm trực tuyến uy tín
-                            </strong>
-                        <div class="uk-text-small">Địa chỉ: 487 Thống Nhất, P. Kinh Dinh, TP. Phan Rang - Tháp Chàm, Ninh Thuận</div>
-                        <div class="uk-text-small">Điện thoại: 0259 382 2597</div>
-                        <div class="uk-text-small">Fax: 0259 382 5300</div>
-                        <div class="uk-text-small">Email: ts@tuson.vn</div>
                     </div>
                     <div class="col-md-6">
-                        <h1>Nơi để bản đồ</h1>
+                        <h6 class="p-3 bg-primary text-white text-md-left text-center text-uppercase">
+                            Đơn hàng (2 sản phẩm)
+                        </h6>
+                        <div class="uk-overflow-auto">
+                            <table class="uk-table uk-table-middle uk-table-small uk-table-divider" style="min-width: 550px">
+                                <thead>
+                                    <tr>
+                                        <th>Sản Phẩm</th>
+                                        <th></th>
+                                        <th>Số lượng</th>
+                                        <th>Đơn giá</th>
+                                        <th>Thành tiền</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                        <tr>
+                                            <td class="text-center">
+                                                <img class="img-thumbnail" alt="" data-src="/dist/images/canon.jpg" width="50px" uk-img="">
+                                            </td>
+                                            <td>
+                                                <b class="d-block uk-text-small">Tủ lạnh Hitachi</b>
+                                                <div class="d-block uk-text-small">Màu sắc: Đen</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <input class="uk-input" value="1" type="number" name="" id="" style="width: 80px">
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" uk-icon="trash">
+
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="text-center">
+                                                <img class="img-thumbnail" alt="" data-src="/dist/images/canon.jpg" width="50px" uk-img="">
+                                            </td>
+                                            <td>
+                                                <b class="d-block uk-text-small">Tủ lạnh Hitachi</b>
+                                                <div class="d-block uk-text-small">Màu sắc: Đen</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <input class="uk-input" value="2" type="number" name="" id="" style="width: 80px">
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" uk-icon="trash">
+
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="text-center">
+                                                <img class="img-thumbnail" alt="" data-src="/dist/images/canon.jpg" width="50px" uk-img="">
+                                            </td>
+                                            <td>
+                                                <b class="d-block uk-text-small">Tủ lạnh Hitachi</b>
+                                                <div class="d-block uk-text-small">Màu sắc: Đen</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <input class="uk-input" value="3" type="number" name="" id="" style="width: 80px">
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" uk-icon="trash">
+
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="text-center">
+                                                <img class="img-thumbnail" alt="" data-src="/dist/images/canon.jpg" width="50px" uk-img="">
+                                            </td>
+                                            <td>
+                                                <b class="d-block uk-text-small">Tủ lạnh Hitachi</b>
+                                                <div class="d-block uk-text-small">Màu sắc: Đen</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <input class="uk-input" value="4" type="number" name="" id="" style="width: 80px">
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" uk-icon="trash">
+
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="text-center">
+                                                <img class="img-thumbnail" alt="" data-src="/dist/images/canon.jpg" width="50px" uk-img="">
+                                            </td>
+                                            <td>
+                                                <b class="d-block uk-text-small">Tủ lạnh Hitachi</b>
+                                                <div class="d-block uk-text-small">Màu sắc: Đen</div>
+                                            </td>
+                                            <td class="text-center">
+                                                <input class="uk-input" value="5" type="number" name="" id="" style="width: 80px">
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-danger uk-text-small">
+                                                31,000,000đ
+                                            </td>
+                                            <td class="text-center">
+                                                <a href="#" uk-icon="trash">
+
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-block border-bottom border-muted py-4 px-3">
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Tạm tính
+                                </div>
+                                <div class="col-8 text-danger">
+                                    380,000,000đ
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Phí vận chuyển
+                                </div>
+                                <div class="col-8 text-danger">
+                                    38,000đ
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-md-6">
+                                    <form action="">
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <input type="text" class="uk-input" placeholder="Mã Giảm Giá">
+                                            </div>
+                                            <div class="col-4 px-0">
+                                                <button class="uk-button uk-button-default">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-4">
+                                    Tổng tiền
+                                </div>
+                                <div class="col-8 text-danger">
+                                    380,000,000đ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-block py-3 text-center">
+                                <a href="#" class="btn btn-info btn-lg text-uppercase text-white mr-md-2 mb-md-0 mb-3">Tiếp tục mua hàng</a>
+                                <button type="submit" class="btn btn-danger btn-lg text-uppercase text-white">Gửi đơn hàng</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="uk-container py-3">
-                <form action="">
-    <b class="tahoma uk-text-bold">Hiện có 142 bình luận</b>
-    <textarea class="uk-textarea" name="" id="" cols="30" rows="10" placeholder="Mời các bạn thảo luận. Vui lòng nhập tiếng việt có dấu"></textarea>
-    <button type="submit" class="btn btn-primary px-5 mt-3">Gửi bình luận</button>
-</form>
-<div class="pt-5 d-inline-flex align-items-center">
-    <strong>Sắp xếp theo</strong>
-    <a class="px-3" href="#">Hay nhất</a>
-    <a class="px-3" href="#">Mới nhất</a>
-</div>
-<hr class="uk-divider-icon">
-<ul class="uk-comment-list">
-    <li>
-        <article class="uk-comment uk-visible-toggle">
-            <header class="uk-comment-header uk-position-relative">
-                <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                    <div class="uk-width-auto">
-                        <img class="uk-comment-avatar" src="/dist/images/avatar.png" width="80" height="80" alt="">
-                    </div>
-                    <div class="uk-width-expand">
-                        <h4 class="uk-comment-title uk-margin-remove">
-                            <a class="uk-link-reset" href="#">Author</a>
-                        </h4>
-                        <p class="uk-comment-meta uk-margin-remove-top">
-                            <a class="uk-link-reset" href="#">12 days ago</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="uk-position-top-right uk-position-small uk-hidden-hover">
-                    <a class="uk-link-muted" href="#">Reply</a>
-                </div>
-            </header>
-            <div class="uk-comment-body">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                    et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                    <div class="d-inline-flex">
-                        <a href="#" class="mr-3 text-center">
-                            <i class="fa fa-comment d-md-inline-block d-block"></i>
-                            <span>Bình luận</span>
-                        </a>
-                        <a href="#" class="mr-3 text-info text-center">
-                            <i class="fa fa-thumbs-up d-md-inline-block d-block"></i>
-                            <span>Thích</span>
-                        </a>
-                    </div>
-            </div>
-        </article>
-        <ul>
-            <li>
-                <article class="uk-comment uk-comment-primary uk-visible-toggle">
-                    <header class="uk-comment-header uk-position-relative">
-                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-comment-avatar" src="/dist/images/avatar.png" width="80" height="80" alt="">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-comment-title uk-margin-remove">
-                                    <a class="uk-link-reset" href="#">Author</a>
-                                </h4>
-                                <p class="uk-comment-meta uk-margin-remove-top">
-                                    <a class="uk-link-reset" href="#">12 days ago</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="uk-position-top-right uk-position-small uk-hidden-hover">
-                            <a class="uk-link-muted" href="#">Reply</a>
-                        </div>
-                    </header>
-                    <div class="uk-comment-body">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                            sit amet.</p>
-                            <div class="d-inline-flex">
-                                    <a href="#" class="mr-3 text-center">
-                                        <i class="fa fa-comment d-md-inline-block d-block"></i>
-                                        <span>Bình luận</span>
-                                    </a>
-                                    <a href="#" class="mr-3 text-info text-center">
-                                        <i class="fa fa-thumbs-up d-md-inline-block d-block"></i>
-                                        <span>Thích</span>
-                                    </a>
-                                    <a href="#" class="mr-3 text-danger text-center">
-                                        <i class="fa fa-thumbs-down d-md-inline-block d-block"></i>
-                                        <span>Không Thích</span>
-                                    </a>
-                                </div>
-                    </div>
-                </article>
-            </li>
-            <li>
-                <article class="uk-comment uk-visible-toggle">
-                    <header class="uk-comment-header uk-position-relative">
-                        <div class="uk-grid-medium uk-flex-middle" uk-grid>
-                            <div class="uk-width-auto">
-                                <img class="uk-comment-avatar" src="/dist/images/avatar.png" width="80" height="80" alt="">
-                            </div>
-                            <div class="uk-width-expand">
-                                <h4 class="uk-comment-title uk-margin-remove">
-                                    <a class="uk-link-reset" href="#">Author</a>
-                                </h4>
-                                <p class="uk-comment-meta uk-margin-remove-top">
-                                    <a class="uk-link-reset" href="#">12 days ago</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="uk-position-top-right uk-position-small uk-hidden-hover">
-                            <a class="uk-link-muted" href="#">Reply</a>
-                        </div>
-                    </header>
-                    <div class="uk-comment-body">
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                            labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                            dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                            sit amet.</p>
-                            <div class="d-inline-flex">
-                                    <a href="#" class="mr-3 text-center">
-                                        <i class="fa fa-comment d-md-inline-block d-block"></i>
-                                        <span>Bình luận</span>
-                                    </a>
-                                    <a href="#" class="mr-3 text-info text-center">
-                                        <i class="fa fa-thumbs-up d-md-inline-block d-block"></i>
-                                        <span>Thích</span>
-                                    </a>
-                                    <a href="#" class="mr-3 text-danger text-center">
-                                        <i class="fa fa-thumbs-down d-md-inline-block d-block"></i>
-                                        <span>Không Thích</span>
-                                    </a>
-                                </div>
-                    </div>
-                </article>
-            </li>
-        </ul>
-    </li>
-</ul>
-<ul class="uk-pagination py-2 uk-flex-center" uk-margin>
-    <li>
-        <a href="#">
-            <span uk-pagination-previous></span>
-        </a>
-    </li>
-    <li class="uk-active">
-        <a href="#">1</a>
-    </li>
-    <li class="uk-disabled">
-        <span>...</span>
-    </li>
-    <li>
-        <a href="#">5</a>
-    </li>
-    <li>
-        <a href="#">6</a>
-    </li>
-    <li>
-        <span>7</span>
-    </li>
-    <li>
-        <a href="#">8</a>
-    </li>
-    <li>
-        <a href="#">
-            <span uk-pagination-next></span>
-        </a>
-    </li>
-</ul>        </div>
         <div class="bg-primary">
     <div class="container text-center py-3">
         <form action="">
@@ -673,4 +733,4 @@
 <script src="/dist/ui/js/uikit-icons.min.js"></script>
 </body>
 
-</html>        
+</html>

@@ -1,28 +1,5 @@
-// #region Footer
-.footer{
-    font-size: 0.7em;
-    li, li a{
-        display: block;
-        color: #ddd;
-        &:hover{
-            color: #fff;
-        }
-    }
-    @include e('logo'){
-        img{
-            max-width: 180px;
-        }
-    }
-    @include e('title'){
-        font-family: $fontdefault, $utmlion;
-        font-size: 1.3em;
-    }
-    @include e('list'){
-        li a:hover::before{
-            content: '\f105';
-            font-family: $fa;
-            margin-right: 5px;
-        }
+footer{
+    ul > li > a{
+        color: #333;
     }
 }
-// #endregion
