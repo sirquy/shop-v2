@@ -63,7 +63,7 @@ input[type=number]{
         right: 0;
         width: 35px;
         height: 25px;
-        background-image: url(/dist/images/badge.png);
+        background-image: url('../images/badge.png');
         background-position: 0 0;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -82,7 +82,7 @@ input[type=number]{
 .iconlist{
     width: 30px;
     height: 30px;
-    background-image: url('/dist/images//iconlist.png');
+    background-image: url('../images/iconlist.png');
     background-repeat: no-repeat;
     display: inline-block;
 }
@@ -137,7 +137,7 @@ input[type=number]{
             right: 0;
             width: 35px;
             height: 25px;
-            background-image: url(/dist/images/badge.png);
+            background-image: url('../images/badge.png');
             background-position: 0 0;
             background-size: 100%;
             background-repeat: no-repeat;
