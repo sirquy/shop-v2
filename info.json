@@ -1,0 +1,9 @@
+{
+    "engine": "ejs",
+    "domain": "shop-v2.gh",
+    "path_static": "dist",
+    "dev_path": "dev",
+    "css_path": "css",
+    "minify": false,
+    "ext": "ejs"
+}

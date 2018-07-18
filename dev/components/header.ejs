@@ -1,7 +1,7 @@
 <header class="uk-offcanvas-content">
     <div class="uk-container-large">
         <a href="/">
-            <img data-src="/dist/images/bn.png" alt="" uk-img>
+            <img data-src="./dist/images/bn.png" alt="" uk-img>
         </a>
     </div>
     <div class="bg-pink d-md-block d-none">
@@ -55,7 +55,7 @@
             <div class="col-md-4 col-12">
                 <a class="row align-items-center py-2" href="/">
                     <div class="d-block col-md-3 px-md-0 text-md-left text-center">
-                        <img class=" header-logo" alt="" data-src="/dist/images/logo.png" uk-img>
+                        <img class=" header-logo" alt="" data-src="./dist/images/logo.png" uk-img>
                     </div>
                     <div class="col-md-9 col-7 d-md-block d-none">
                         <h4 class="my-0 text-info uk-text-bold">Siêu thị điện máy Từ Sơn</h5>
@@ -65,15 +65,17 @@
             </div>
             <div class="col-md-5 col-12 order-md-2 order-3">
                 <form class="w-100 uk-search uk-search-default">
-                    <a href="" class="uk-search-icon-flip" uk-search-icon></a>
-                    <input class="uk-search-input uk-input w-100" type="search" placeholder="Search...">
+                    <div class="uk-flex uk-flex-row">
+                        <input type="text" class="uk-input border border-primary bg-white uk-width-expand" placeholder="Search...">
+                        <button class="uk-button btn-primary uk-width-auto text-white px-2"><i class="fa fa-search fa-lg mr-1"></i><span>Tìm kiếm</span></button>
+                    </div>
                 </form>
             </div>
             <div class="col-md-3 order-md-3 order-2">
                 <ul class="uk-iconnav d-inline-flex w-100" uk-sticky="cls-active: menu-fixed; bottom: #transparent-sticky-navbar">
                     <li class="flex-sm-1">
                         <a class="text-center text-dark p-1" href="#search-full" uk-toggle>
-                            <i class="uk-icon-button text-dark" uk-icon="list"></i>
+                            <i class="uk-icon-button text-dark border border-dark" uk-icon="list"></i>
                             <div class="uk-navbar-subtitle">Tra cứu
                                 <span class="d-md-inline-block d-none">đơn hàng</span>
                             </div>
@@ -81,9 +83,9 @@
                     </li>
                     <li class="flex-sm-1">
                         <a class="text-center text-dark p-1 position-relative" href="#">
-                            <i class="uk-icon-button text-dark" uk-icon="cart"></i>
+                            <i class="uk-icon-button text-dark border border-dark" uk-icon="cart"></i>
                             <div class="uk-navbar-subtitle">Giỏ Hàng
-                                <small class="product-badge uk-label-danger p-1 line-height-1">
+                                <small class="product-badge uk-label-danger badge p-1 line-height-1">
                                    100
                                 </small>
                             </div>
@@ -91,7 +93,7 @@
                     </li>
                     <li class="flex-sm-1">
                         <a class="text-center text-dark p-1" href="#">
-                            <i class="uk-icon-button text-dark" uk-icon="users"></i>
+                            <i class="uk-icon-button text-dark border border-dark" uk-icon="users"></i>
                             <div class="uk-navbar-subtitle">Tài khoản</div>
                         </a>
                     </li>
